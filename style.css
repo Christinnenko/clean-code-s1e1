@@ -20,7 +20,7 @@
   font-family: fantasy, cursive;
 }
 
-/*Adaptive*/
+
 @media (max-width:768px) {
   .eisenhower-matrix {
     text-align: center;
