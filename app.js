@@ -14,6 +14,7 @@ var incompleteTaskHolder=document.getElementById("incomplete-tasks");//ul of #in
 var completedTasksHolder=document.getElementById("completed-tasks");//completed-tasks
 
 
+
 //New task list item
 var createNewTaskElement=function(taskString){
 
@@ -127,9 +128,12 @@ var taskCompleted=function(){
 
     //Append the task list item to the #completed-tasks
     var listItem=this.parentNode;
+    var label = listItem.querySelector("label");
+
+    // Toggle the completed-task class on the label element
+    label.classList.toggle("completed-tasks-label");
     completedTasksHolder.appendChild(listItem);
     bindTaskEvents(listItem, taskIncomplete);
-
 }
 
 

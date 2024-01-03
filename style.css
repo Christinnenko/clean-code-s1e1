@@ -21,8 +21,9 @@
 }
 
 @media (max-width:768px) {
-  .eisenhower-matrix { text-align: center;
-}
+  .eisenhower-matrix {
+    text-align: center;
+  }
 }
 
 .main-page {
@@ -46,11 +47,13 @@
   padding: 0px;
 }
 
-.list, .title {
+.list,
+.title {
   list-style: none;
 }
 
-.input,.button{
+.input,
+.button {
   outline: none;
 }
 
@@ -125,14 +128,14 @@
   margin: 0 10px;
 }
 
-.list >.label  {
+.list > .label  {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
 
-.list >    .input-text {
+.list > .input-text {
   width: 226px;
 }
 
