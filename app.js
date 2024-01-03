@@ -144,6 +144,11 @@ var taskIncomplete=function(){
     //When the checkbox is unchecked
     //Append the task list item to the #incomplete-tasks.
     var listItem=this.parentNode;
+    // Remove the completed-tasks-label class to remove the strikethrough
+    var label = listItem.querySelector("label");
+
+    // Remove the completed-tasks-label class to remove the strikethrough
+    label.classList.remove("completed-tasks-label");
     incompleteTaskHolder.appendChild(listItem);
     bindTaskEvents(listItem,taskCompleted);
 }
